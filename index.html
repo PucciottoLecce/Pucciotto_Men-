@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menù</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Lobster', cursive;
+            background-color: white;
+            color: black;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .logo {
+            max-width: 300px;
+            height: auto;
+            margin-bottom: 60px;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .menu-button {
+            background-color: black;
+            color: white;
+            border: 3px solid red;
+            padding: 20px 60px;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            min-width: 280px;
+            border-radius: 8px;
+        }
+
+        .menu-button:hover {
+            background-color: red;
+            border-color: black;
+            transform: scale(1.05);
+        }
+
+        .menu-button:active {
+            transform: scale(0.98);
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                max-width: 200px;
+                margin-bottom: 40px;
+            }
+
+            .menu-button {
+                padding: 15px 40px;
+                font-size: 20px;
+                min-width: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.png" alt="Logo" class="logo">
+        <div class="buttons-container">
+            <a href="menù.html" class="menu-button">Menù</a>
+            <a href="allergeni.html" class="menu-button">Allergeni</a>
+        </div>
+    </div>
+</body>
+</html>
